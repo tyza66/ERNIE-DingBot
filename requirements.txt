@@ -1,0 +1,8 @@
+flask
+os
+json
+base64
+hashlib
+hmac
+qianfan
+requests
