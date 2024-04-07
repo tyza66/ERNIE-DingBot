@@ -28,7 +28,7 @@ python ErnieDingBot.py
 ```
 
 ```
-docker run -d -p 3096:3000 -e SECRET=钉钉AppSecret -e AK=百度千帆AK -e SK=百度千帆SK erniedingbot:1.0.0
+docker run -d -p 3096:3000 -e SECRET=钉钉AppSecret -e AK=百度千帆AK -e SK=百度千帆SK -e model=ERNIE-Bot erniedingbot:1.0.0
 ```
 
 #### 六、请求地址

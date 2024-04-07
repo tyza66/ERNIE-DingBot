@@ -2,10 +2,11 @@ import os
 import qianfan
 
 # 配置AK/SK
-os.environ["QIANFAN_AK"] = os.environ.get("AK", "")
-os.environ["QIANFAN_SK"] = os.environ.get("SK", "")
+qianfan.get_config().AK = os.environ.get("AK", "")
+qianfan.get_config().AK = os.environ.get("SK", "")
+model = os.environ.get("model", "ERNIE-Bot")
 
-chat_comp = qianfan.ChatCompletion(model="ERNIE-Bot")
+chat_comp = qianfan.ChatCompletion(model=model)
 
 
 def erine(message):
